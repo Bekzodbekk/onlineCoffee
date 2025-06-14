@@ -1,0 +1,54 @@
+@import "../../colors";
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo{
+        cursor: pointer;
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        &>*{
+            padding: 8px;
+            border-radius: 7px;
+            height: 40px;
+            cursor: pointer;
+            transition: .1s linear;
+            cursor: pointer;
+
+        }
+
+        .location{
+            display: flex;
+            align-items: center;
+            background-color: $purpleLight;
+            &:hover{
+                background-color: #c7b4f3;
+            }
+
+            h3{
+                color: $purple;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+        .shop-buck{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $yellowLight;
+
+            &:hover{
+                background-color: #e0d296;
+            }
+        }
+    }
+}

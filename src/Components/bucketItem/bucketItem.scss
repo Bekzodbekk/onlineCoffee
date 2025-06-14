@@ -1,0 +1,50 @@
+@import "../../colors";
+
+.bucket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    .coffee-image {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .desc {
+            .name {
+                font-size: 18px;
+            }
+
+            .price {
+                color: $paragraphColor;
+            }
+        }
+    }
+
+    .coffee-counter {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background-color: $purpleLight;
+        border-radius: 8px;
+
+
+        font-size: 23px;
+        padding: 2px 7px;
+
+        span:nth-child(1),
+        span:nth-child(3) {
+            cursor: pointer;
+            color: $purple;
+        }
+    }
+
+}

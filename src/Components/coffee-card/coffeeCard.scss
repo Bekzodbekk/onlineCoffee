@@ -1,0 +1,109 @@
+@import "../../colors";
+
+.coffee-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $gray;
+    border-radius: 10px;
+    padding: 17px;
+
+    .coffee-image{
+        position: relative;
+        bottom: 50px;
+        margin-bottom: -30px;
+    }
+
+    .coffee-products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &>* {
+            padding: 4px 8px;
+            font-weight: 700;
+            border-radius: 30px;
+            color: $orange;
+            font-size: 13px;
+            background-color: $yellowLight;
+        }
+    }
+
+    .coffee-desc {
+        text-align: center;
+        padding: 20px 0;
+
+        h1 {
+            font: {
+                size: 23px;
+                weight: 700;
+            }
+            color: $black;
+        }
+
+        p {
+            color: $paragraphColor;
+            font: {
+                size: 15px;
+                weight: 400;
+            }
+        }
+    }
+
+    .card-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .coffee-price {
+            p {
+                color: $paragraphColor;
+                font: {
+                    size: 18px;
+                    weight: 500;
+                }
+
+                span {
+                    font: {
+                        size: 28px;
+                        weight: 700;
+                    }
+                }
+            }
+        }
+
+        .right-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .coffee-count {
+                background-color: $purpleLight;
+                border-radius: 8px;
+                .counter {
+                    
+                    font-size: 25px;
+                    padding: 2px 7px;
+                    &:nth-child(1),&:nth-child(3){
+                        cursor: pointer;
+                        color: $purple;
+                    }
+                }
+            }
+            .bucket-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 4px;
+                background-color: $purple;
+
+
+            }
+        }
+    }
+}
