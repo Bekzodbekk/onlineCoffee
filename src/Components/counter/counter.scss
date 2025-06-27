@@ -1,0 +1,24 @@
+@import "../../colors";
+
+
+.counter{
+    display: flex;
+    align-items: center;
+    .coffee-count {
+        display: flex;
+        background-color: $purpleLight;
+        border-radius: 8px;
+    
+        .counter {
+    
+            font-size: 25px;
+            padding: 2px 7px;
+    
+            &:nth-child(1),
+            &:nth-child(3) {
+                cursor: pointer;
+                color: $purple;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./coffeeCard.scss"
+import Counter from '../counter/Counter'
+import RemoverBtn from '../removerBtn/RemoverBtn'
 
 const CoffeeCard = ({ coffeeImage, coffeeProducts, name, desc, price }) => {
     let [coffeeCount, setCoffeeCount] = useState(1)
@@ -32,11 +34,7 @@ const CoffeeCard = ({ coffeeImage, coffeeProducts, name, desc, price }) => {
                     <p>R$ <span>{price}</span></p>
                 </div>
                 <div className="right-action">
-                    <div className="coffee-count">
-                        <span className='counter' onClick={counterCoffeeFunc}>-</span>
-                        <span className='counter'>{coffeeCount}</span>
-                        <span className='counter' onClick={counterCoffeeFunc}>+</span>
-                    </div>
+                    <Counter count={coffeeCount} counterFunc={counterCoffeeFunc}/>
                     <div className="bucket-btn">
                         <img src={"assets/icons/buck2.png"} alt="" />
                     </div>

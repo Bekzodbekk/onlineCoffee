@@ -1,0 +1,64 @@
+@import "../../colors";
+
+.confirm-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 200px;
+
+    .confirm-info {
+        .title {
+            h1 {
+                color: #C47F17;
+
+                font: {
+                    size: 32px;
+                    weight: 800;
+                }
+            }
+
+            p {
+                color: #403937;
+
+                font: {
+                    size: 20px;
+                    weight: 400;
+                }
+            }
+
+        }
+
+        .info-content {
+            display: flex;
+            justify-content: flex-start;
+            width: 700px;
+            flex-direction: column;
+            padding: 40px;
+            margin-top: 50px;
+            border: 1px solid #DBAC2C;
+            gap: 25px;
+            border: {
+                bottom-left-radius: 30px;
+                top-right-radius: 30px;
+        }
+
+            &>* {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+            }
+
+            h1 {
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

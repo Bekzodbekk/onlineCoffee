@@ -1,6 +1,7 @@
 import React from 'react'
 import "./bucketSection.scss"
 import BucketItem from '../bucketItem/BucketItem'
+import { Link } from 'react-router-dom'
 
 const BucketSection = ({bucketShowCheck, bucketShowCheckFunc}) => {
   
@@ -23,7 +24,7 @@ const BucketSection = ({bucketShowCheck, bucketShowCheckFunc}) => {
         </div>
         <div className="confirm-btn">
           <button>
-            <a href="/">Confirm</a>
+            <Link onClick={bucketShowCheckFunc} to="/transaction">Confirm</Link>
           </button>
         </div>
       </div>
