@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./app.scss"
 import Navbar from '../../Components/Navbar/Navbar'
 import Home from '../../pages/Home/Home'
-import CoffeeShop from '../../Components/coffee-shop/CoffeeShop'
 import BucketSection from '../../Components/bucketSection/BucketSection'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import TransactionPage from '../transaction/TransactionPage'

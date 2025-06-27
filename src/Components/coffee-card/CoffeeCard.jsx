@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./coffeeCard.scss"
 import Counter from '../counter/Counter'
-import RemoverBtn from '../removerBtn/RemoverBtn'
 
 const CoffeeCard = ({ coffeeImage, coffeeProducts, name, desc, price }) => {
     let [coffeeCount, setCoffeeCount] = useState(1)
